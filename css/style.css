@@ -3,6 +3,7 @@
     --color-bg-body: #f8f9fa;
     --color-side-bar: #0f263d;
     --color-nav-bar: #1b72e8;
+    --color-bg-badge: #165bba;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -47,6 +48,14 @@ header{
     width: calc(100% - 70px);
     height: 100%;
     overflow-y: scroll;
+}
+.square{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.my-bg-badge{
+    background-color: var(--color-bg-badge);
 }
 #main-nav{
     background-color: var(--color-nav-bar);
