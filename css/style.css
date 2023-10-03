@@ -8,3 +8,23 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-bg-body);
 }
+.search-bar{
+    background-color: var(--color-bg-search-bar);
+}
+.my-form-control{
+    border:none
+}
+.my-form-control:focus{
+    box-shadow: none;
+    background-color: var(--color-bg-search-bar);
+}
+.my-form-floating>.my-form-control:focus~label::after{
+    background-color: var(--color-bg-search-bar);
+}
+@media screen and (max-width: 1200px){
+    .fa-bars,
+    .fa-circle-question,
+    .fa-ellipsis-vertical{
+        display: none;
+    }
+}
