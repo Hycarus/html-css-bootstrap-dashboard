@@ -27,11 +27,11 @@
   <div class="wrapper">
     <header class="sticky-top container-fluid py-3">
       <div class="row align-items-center bg-white">
-        <div class="col-2 d-flex justify-content-center">
-          <img src="img/logo.svg" alt="logo" class="img-fluid">
-          <img src="img/mobile-logo.png" alt="mobile-logo" class="mobile-logo d-none">
+        <div class="col-1 col-lg-2 col-xl-2 d-flex justify-content-center">
+          <img src="img/logo.svg" alt="logo" class="img-fluid d-none d-lg-block">
+          <img src="img/mobile-logo.png" alt="mobile-logo" class="mobile-logo d-lg-none">
         </div>
-        <div class="col-8">
+        <div class="col-10 col-lg-9 col-xl-8">
           <div class="input-group">
             <span class="input-group-text search-bar">
               <i class="fa-solid fa-magnifying-glass"></i>
@@ -43,10 +43,16 @@
             </div>
           </div>
         </div>
-        <div class="col-2 d-flex justify-content-end">
-          <a href=""><i class="fa-solid fa-bars p-3 fs-4 text-dark"></i></a>
-          <a href=""><i class="fa-solid fa-circle-question p-3 fs-4 text-dark"></i></a>
-          <a href=""><i class="fa-solid fa-ellipsis-vertical p-3 fs-4 text-dark"></i></a>
+        <div class="col-1 col-lg-1 col-xl-2 d-flex justify-content-end">
+          <a href="" class="d-none d-xl-block">
+            <i class="fa-solid fa-bars p-3 fs-4 text-dark"></i>
+          </a>
+          <a href="" class="d-none d-xl-block">
+            <i class="fa-solid fa-circle-question p-3 fs-4 text-dark"></i>
+          </a>
+          <a href="" class="d-none d-xl-block">
+            <i class="fa-solid fa-ellipsis-vertical p-3 fs-4 text-dark"></i>
+          </a>
           <a href=""><i class="fa-solid fa-bell p-3 text-warning fs-4"></i></a>
         </div>
       </div>
@@ -54,31 +60,57 @@
     <main class="main d-flex">
       <div class="side-bar d-flex flex-column justify-content-between">
         <ul class="d-flex flex-wrap flex-column p-1 py-4">
-          <li>
-            <a href="#" class="text-light text-decoration-none p-3">
-              <i class="fa-solid fa-house fa-fw m-2"></i> Home
+          <li class="mx-auto">
+            <a href="#" class="text-light text-decoration-none m-3 ">
+              <i class="fa-solid fa-house fa-fw pb-3"></i>
+              <span class="d-none">Home</span>
             </a>
           </li>
-          <li>
-            <a href="#" class="text-light text-decoration-none p-3">
-              <i class="fa-solid fa-chart-simple fa-fw m-2"></i> Stats
+          <li class="mx-auto">
+            <a href="#" class="text-light text-decoration-none m-3">
+              <i class="fa-solid fa-chart-simple fa-fw pb-3"></i> 
+              <span class="d-none">Stats</span>
             </a>
           </li>
-          <li>
-            <a href="#" class="text-light text-decoration-none p-3">
-              <i class="fa-solid fa-signal fa-fw m-2"></i> Signals
+          <li class="mx-auto">
+            <a href="#" class="text-light text-decoration-none m-3">
+              <i class="fa-solid fa-signal fa-fw pb-3"></i> 
+              <span class="d-none">Signals</span>
             </a>
           </li>
         </ul>
-        <div class="pb-3">
-          <a href="" class="text-light text-decoration-none p-3 ">
-            <i class="fa-solid fa-fw fa-gear m-2"></i> Admin
+        <div class="pb-3 mx-auto">
+          <a href="" class="text-light text-decoration-none m-3">
+            <i class="fa-solid fa-fw fa-gear pb-3"></i> 
+            <span class="d-none">Admin</span>
           </a>
         </div>
       </div>
-      <div class="main-content">
-        <section id="main-nav">
-
+      <div class="main-content container-fluid">
+        <section id="main-nav" class="row text-light">
+          <div class="col-12 align-items-center d-flex py-3">
+            <span>Nuovo Studente</span>
+            <a href="" class="text-white">
+              <i class="fa-regular fa-fw fa-square-plus fs-1 ps-4"></i>
+            </a> 
+          </div>
+          <div class="col-12">
+            <div>
+              <h1>
+                Booelean
+              </h1>
+              <span class="badge rounded-pill ">Piano blaze</span>
+            </div>
+            <div>
+              <span class="badge rounded-pill ">3 app</span>
+              <span class="badge rounded-pill ">Boolean mobile app</span>
+              <span class="badge rounded-pill ">Boolean web app</span>
+              <span class="badge rounded-pill ">Boolean blog app</span>
+            </div>
+          </div>
+          <div class="col-12">
+            Studenti online negli ultimi 30 minuti
+          </div>
         </section>
         <div id="dashboard">
           <div class="dash-left">

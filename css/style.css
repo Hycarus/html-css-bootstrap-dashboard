@@ -10,6 +10,7 @@ body{
 }
 header{
     background-color: var(--color-bg-body);
+    height: 90px;
 }
 .wrapper{
     width: 100%;
@@ -28,26 +29,25 @@ header{
 .my-form-floating>.my-form-control:focus~label::after{
     background-color: var(--color-bg-search-bar);
 }
-@media screen and (max-width: 1200px){
-    .fa-bars,
-    .fa-circle-question,
-    .fa-ellipsis-vertical{
-        display: none;
-    }
+.mobile-logo{
+    width: 60px;
 }
 .main{
     width: 100%;
     height: calc(100vh - 90px);
 }
 .side-bar{
-    width: 150px;
+    width: 70px;
     height: 100%;
     overflow-y: hidden;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--color-side-bar);
 }
 .main-content{
-    width: calc(100% - 150px);
+    width: calc(100% - 70px);
     height: 100%;
     overflow-y: scroll;
+}
+#main-nav{
+    background-color: var(--color-nav-bar);
 }
