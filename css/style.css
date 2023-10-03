@@ -60,11 +60,24 @@ header{
 #main-nav{
     background-color: var(--color-nav-bar);
 }
+table img{
+    width: 35px;
+    height: 35px;
+}
+.my-accordion-button:focus{
+    box-shadow: none;
+}
 @media screen and (min-width:992px) {
     .main-content{
         width: calc(100% - 150px);
     }
     .side-bar{
         width: 150px;
+    }
+    .dash-left{
+        width: 60%;
+    }
+    .dash-right{
+        width: 40%;
     }
 }
