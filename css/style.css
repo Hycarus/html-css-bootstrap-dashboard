@@ -108,6 +108,10 @@ table img{
 .list-group-flush>.my-list-group-item{
     border-width: 1px 0 var(--bs-list-group-border-width)
 }
+.my-btn{
+    background-color: var(--color-bg-search-bar);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
 @media screen and (min-width:992px) {
     .main-content{
         width: calc(100% - 150px);
