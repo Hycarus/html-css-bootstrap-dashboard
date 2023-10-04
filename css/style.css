@@ -44,6 +44,12 @@ header{
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--color-side-bar);
 }
+.side-bar li{
+    transition: all 0.3s;
+}
+.side-bar li:hover{
+    background-color: rgba(255, 255, 255, 0.491);
+}
 .main-content{
     width: calc(100% - 70px);
     height: 100%;
@@ -63,12 +69,6 @@ header{
 table img{
     width: 35px;
     height: 35px;
-}
-.my-accordion-button:focus{
-    box-shadow: none;
-}
-.my-accordion-button:not(.collapsed){
-    background-color: white;
 }
 .my-accordion-item{
     border-top: none;
