@@ -67,6 +67,24 @@ table img{
 .my-accordion-button:focus{
     box-shadow: none;
 }
+.my-accordion-button:not(.collapsed){
+    background-color: white;
+}
+.my-accordion-item{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.my-accordion-item:last-of-type{
+    border: none;
+}
+.my-list-group{
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+.list-group-flush>.my-list-group-item{
+    border-width: 1px 0 var(--bs-list-group-border-width)
+}
 @media screen and (min-width:992px) {
     .main-content{
         width: calc(100% - 150px);
