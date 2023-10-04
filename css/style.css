@@ -81,6 +81,11 @@ header{
 .my-bg-badge{
     background-color: var(--color-bg-badge);
 }
+.my-offcanvas.offcanvas-start{
+    right: 0;
+    left: auto;
+    transform: translatex(100%);
+}
 #main-nav{
     background-color: var(--color-nav-bar);
 }
@@ -109,5 +114,10 @@ table img{
     }
     .side-bar{
         width: 150px;
+    }
+}
+@media screen and (max-width:992px) {
+    .my-offcanvas{
+        width: 100vw !important;
     }
 }
